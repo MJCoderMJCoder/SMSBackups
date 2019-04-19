@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.lzf.smsbackups">
+
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE"/>
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_REMOVED"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission
+        android:name="android.permission.BROADCAST_SMS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission
+        android:name="android.permission.BROADCAST_WAP_PUSH"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission
+        android:name="android.permission.CALL_PRIVILEGED"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    <uses-permission android:name="android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+    <uses-permission
+        android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission
+        android:name="android.permission.DIAGNOSTIC"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission
+        android:name="android.permission.DUMP"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission
+        android:name="android.permission.FACTORY_TEST"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission
+        android:name="android.permission.GLOBAL_SEARCH"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission
+        android:name="android.permission.INSTALL_LOCATION_PROVIDER"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INSTANT_APP_FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.READ_FRAME_BUFFER"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.SET_ALWAYS_FINISH"/>
+    <uses-permission android:name="android.permission.SET_ANIMATION_SCALE"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.SET_PROCESS_LIMIT"/>
+    <uses-permission
+        android:name="android.permission.SET_TIME"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.SIGNAL_PERSISTENT_PROCESSES"/>
+    <uses-permission
+        android:name="android.permission.STATUS_BAR"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission
+        android:name="android.permission.UPDATE_DEVICE_STATS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_SIP"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+
+
+    <application
+        android:name=".SMSBackupsApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <!-- 这条属性可以让启动app入口Activity申明为由接收隐士的Intent来启动，这样自然也就不会显示图标了 -->
+                <data
+                    android:host="com.lzf.smsbackups.activity.MainActivity"
+                    android:scheme="com.lzf.smsbackups"
+                    tools:ignore="AppLinkUrlError"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".util.MyBroadcastReceiver">
+            <intent-filter>
+
+                <!-- 处理来电。 -->
+                <action android:name="android.intent.action.ANSWER"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 这是一个包含充电状态，电平和其他电池信息的粘性广播。 -->
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 接收开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 接收呼叫广播 -->
+                <action android:name="android.intent.action.CALL"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 按下呼叫按钮 -->
+                <action android:name="android.intent.action.CALL_BUTTON"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 按下相机按钮 -->
+                <action android:name="android.intent.action.CAMERA_BUTTON"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 日期已更改 -->
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 显示了一个用户正在拨打的号码，允许用户明确发起呼叫 -->
+                <action android:name="android.intent.action.DIAL"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 对设备的物理对接状态进行更改的粘性广播 -->
+                <action android:name="android.intent.action.DOCK_EVENT"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 系统开始做梦后发送 -->
+                <action android:name="android.intent.action.DREAMING_STARTED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 在系统停止梦中之后发送 -->
+                <action android:name="android.intent.action.DREAMING_STOPPED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 插入有线耳机或拔下插头 -->
+                <action android:name="android.intent.action.HEADSET_PLUG"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 当前设备的区域设置已更改 -->
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!--
+                在用户完成引导后，它仍会处于“锁定”状态，广播一次。
+                它可以用于执行特定于应用程序的初始化，例如安装警报。您必须持有该RECEIVE_BOOT_COMPLETED 许可才能接收此广播
+                -->
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 按下“媒体按钮” -->
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 即将拨出电话。 -->
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 用户清除了包裹的数据。这之前应该先ACTION_PACKAGE_RESTARTED删除所有持久性数据并发送此广播。请注意，清除包并没有 收到该广播。 -->
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 现有应用程序包已从设备中完全删除。 -->
+                <action android:name="android.intent.action.ACTION_PACKAGE_FULLY_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 现有应用程序包已从设备中删除。 -->
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 时区已更改 -->
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 时间已经确定 -->
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 用户标识已从系统中删除 -->
+                <action android:name="android.intent.action.UID_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 启动应用程序卸载程序。 -->
+                <action android:name="android.intent.action.UNINSTALL_PACKAGE"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 设备唤醒后用户在场时发送（例如，当键盘锁不在时）。 -->
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 在用户第一次启动时发送，以允许系统应用程序执行一次初始化。 -->
+                <action android:name="android.intent.action.USER_INITIALIZE"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+            </intent-filter>
+            <intent-filter>
+                <!-- 插上外部电源时发出的广播 -->
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <!-- 已断开外部电源连接时发出的广播 -->
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+            <intent-filter>
+                <!-- 关闭系统时发出的广播 -->
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".util.AlarmBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+
+        <service
+            android:name=".util.MyIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.lzf.smsbackups.util.MyIntentService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
